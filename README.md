@@ -3,9 +3,9 @@ A super light responsive CSS grid system for Mobile, Tablet and Desktop. No real
 
 ## Syntax
 ```html
-	<div class="row">
-		<div class="large-3 medium-6 mobile-4 columns">
-		</div>
+<div class="row">
+	<div class="large-3 medium-6 mobile-4 columns">
 	</div>
+</div>
 ```
 
