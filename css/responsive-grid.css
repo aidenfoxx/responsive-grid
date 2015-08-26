@@ -10,7 +10,7 @@
  */ 
 
 /**
- * Microclearfix by Nicolas Gallagher
+ * Micro clearfix by Nicolas Gallagher
  * (http://nicolasgallagher.com/)
  */
 .row:before, .row:after { content: ''; display: table; }
