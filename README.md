@@ -11,4 +11,4 @@ A super light responsive CSS grid system for Mobile, Tablet and Desktop. No real
 
 ## Browser Support
 
-Supports IE8+ and all modern browsers.
+Supports IE8 with 'repond.js' and all other modern browsers.
