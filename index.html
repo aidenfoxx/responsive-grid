@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gaussian Background</title>
+	<link href="./css/responsive-grid.css" rel="stylesheet" type="text/css">
+	<style>
+		body { 
+			margin: 0;
+			padding: 20px;
+			font-family: sans-serif;
+		}
+		h1 { margin-top: 0; }
+
+		.border { border: 1px solid #999999; border-radius: 4px; overflow: hidden; }
+		
+		.row > .columns { 
+			background-color: #fcfcfc; 
+			padding-top: 10px; 
+			padding-bottom: 10px;
+			text-align: center;
+			border-top: 1px solid #999999;
+			border-left: 1px solid #999999;
+		}
+		.row:first-child > .columns { border-top: none; }
+		.row > .columns:first-child { border-left: none; }
+		.row:nth-child(odd) > .columns { background-color: #f0f0f0; }
+
+		@media only screen and (max-width: 1023px) {
+			.row > *[class^=large-].columns { border-left: none; }
+		}
+
+		@media only screen and (max-width: 639px) {
+			.row > *[class^=medium-].columns { border-left: none; }
+		}
+	</style>
+</head>
+<body>
+	<h1>Responsive Grid</h1>
+	<h2>Desktop (1024px):</h2>
+	<div class="border">
+		<div class="row">
+			<div class="large-12 columns">12</div>
+		</div>
+		<div class="row">
+			<div class="large-6 columns">6</div>
+			<div class="large-6 columns">6</div>
+		</div>
+		<div class="row">
+			<div class="large-4 columns">4</div>
+			<div class="large-4 columns">4</div>
+			<div class="large-4 columns">4</div>
+		</div>
+		<div class="row">
+			<div class="large-3 columns">3</div>
+			<div class="large-3 columns">3</div>
+			<div class="large-3 columns">3</div>
+			<div class="large-3 columns">3</div>
+		</div>
+		<div class="row">
+			<div class="large-2 columns">2</div>
+			<div class="large-2 columns">2</div>
+			<div class="large-2 columns">2</div>
+			<div class="large-2 columns">2</div>
+			<div class="large-2 columns">2</div>
+			<div class="large-2 columns">2</div>
+		</div>
+		<div class="row">
+			<div class="large-1 columns">1</div>
+			<div class="large-1 columns">1</div>
+			<div class="large-1 columns">1</div>
+			<div class="large-1 columns">1</div>
+			<div class="large-1 columns">1</div>
+			<div class="large-1 columns">1</div>
+			<div class="large-1 columns">1</div>
+			<div class="large-1 columns">1</div>
+			<div class="large-1 columns">1</div>
+			<div class="large-1 columns">1</div>
+			<div class="large-1 columns">1</div>
+			<div class="large-1 columns">1</div>
+		</div>
+	</div>
+	<h2>Tablet (640px):</h2>
+	<div class="border">
+		<div class="row">
+			<div class="medium-12 columns">12</div>
+		</div>
+		<div class="row">
+			<div class="medium-6 columns">6</div>
+			<div class="medium-6 columns">6</div>
+		</div>
+		<div class="row">
+			<div class="medium-4 columns">4</div>
+			<div class="medium-4 columns">4</div>
+			<div class="medium-4 columns">4</div>
+		</div>
+		<div class="row">
+			<div class="medium-3 columns">3</div>
+			<div class="medium-3 columns">3</div>
+			<div class="medium-3 columns">3</div>
+			<div class="medium-3 columns">3</div>
+		</div>
+		<div class="row">
+			<div class="medium-2 columns">2</div>
+			<div class="medium-2 columns">2</div>
+			<div class="medium-2 columns">2</div>
+			<div class="medium-2 columns">2</div>
+			<div class="medium-2 columns">2</div>
+			<div class="medium-2 columns">2</div>
+		</div>
+		<div class="row">
+			<div class="medium-1 columns">1</div>
+			<div class="medium-1 columns">1</div>
+			<div class="medium-1 columns">1</div>
+			<div class="medium-1 columns">1</div>
+			<div class="medium-1 columns">1</div>
+			<div class="medium-1 columns">1</div>
+			<div class="medium-1 columns">1</div>
+			<div class="medium-1 columns">1</div>
+			<div class="medium-1 columns">1</div>
+			<div class="medium-1 columns">1</div>
+			<div class="medium-1 columns">1</div>
+			<div class="medium-1 columns">1</div>
+		</div>
+	</div>
+	<h2>Mobile (All):</h2>
+	<div class="border">
+		<div class="row">
+			<div class="small-12 columns">12</div>
+		</div>
+		<div class="row">
+			<div class="small-6 columns">6</div>
+			<div class="small-6 columns">6</div>
+		</div>
+		<div class="row">
+			<div class="small-4 columns">4</div>
+			<div class="small-4 columns">4</div>
+			<div class="small-4 columns">4</div>
+		</div>
+		<div class="row">
+			<div class="small-3 columns">3</div>
+			<div class="small-3 columns">3</div>
+			<div class="small-3 columns">3</div>
+			<div class="small-3 columns">3</div>
+		</div>
+		<div class="row">
+			<div class="small-2 columns">2</div>
+			<div class="small-2 columns">2</div>
+			<div class="small-2 columns">2</div>
+			<div class="small-2 columns">2</div>
+			<div class="small-2 columns">2</div>
+			<div class="small-2 columns">2</div>
+		</div>
+		<div class="row">
+			<div class="small-1 columns">1</div>
+			<div class="small-1 columns">1</div>
+			<div class="small-1 columns">1</div>
+			<div class="small-1 columns">1</div>
+			<div class="small-1 columns">1</div>
+			<div class="small-1 columns">1</div>
+			<div class="small-1 columns">1</div>
+			<div class="small-1 columns">1</div>
+			<div class="small-1 columns">1</div>
+			<div class="small-1 columns">1</div>
+			<div class="small-1 columns">1</div>
+			<div class="small-1 columns">1</div>
+		</div>
+	</div>
+</body>
+</html>
