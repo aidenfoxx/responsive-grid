@@ -9,3 +9,6 @@ A super light responsive CSS grid system for Mobile, Tablet and Desktop. No real
 </div>
 ```
 
+## Browser Support
+
+Supports IE8+ and all modern browsers.
