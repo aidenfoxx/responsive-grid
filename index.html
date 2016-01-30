@@ -25,16 +25,37 @@
 		.row > .columns:first-child { border-left: none; }
 		.row:nth-child(odd) > .columns { background-color: #f0f0f0; }
 
-		@media only screen and (max-width: 1023px) {
+		@media only screen and (max-width: 1199px) {
 			.row > *[class^=large-].columns { border-left: none; }
 		}
 
-		@media only screen and (max-width: 639px) {
+		@media only screen and (max-width: 767px) {
 			.row > *[class^=medium-].columns { border-left: none; }
 		}
 	</style>
 </head>
 <body>
+	<h1>Visibility</h1>
+	<div class="border">
+		<div class="row">
+			<div class="large-12 columns hide-medium">Visible Large Only</div>
+			<div class="large-12 columns show-medium hide-small">Visible Medium Only</div>
+			<div class="large-12 columns show-small">Visible Small Only</div>
+		</div>
+	</div>
+	<br />
+	<div class="border">
+		<div class="row">
+			<div class="large-12 columns">Visible Large and Lower</div>
+		</div>
+		<div class="row">
+			<div class="large-12 columns show-medium">Visible Medium and Lower</div>
+		</div>
+		<div class="row">
+			<div class="large-12 columns show-small">Visible Small Only</div>
+		</div>
+	</div>
+	<br />
 	<h1>Responsive Grid</h1>
 	<h2>Desktop (1024px):</h2>
 	<div class="border">

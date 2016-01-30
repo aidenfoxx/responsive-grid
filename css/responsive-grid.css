@@ -29,7 +29,24 @@
     background-clip: padding-box;
 }
 
-@media only screen and (max-width: 639px) {
+/**
+ * Visibility works on level-and-lower basis e.g. 
+ * show-medium will be visible on medium and lower 
+ * and hide-medium will be hidden on medium and lower.
+ */
+.show-medium,
+.show-small,
+.hide-large { display: none; }
+
+@media only screen and (max-width: 1199px) {
+	.show-medium { display: block; }
+	.hide-medium { display: none; }
+}
+
+@media only screen and (max-width: 767px) {
+	.show-small { display: block; }
+	.hide-small { display: none; }
+
 	.row > .columns.medium-1,
 	.row > .columns.medium-2,
 	.row > .columns.medium-3,
@@ -44,7 +61,7 @@
 	.row > .columns.medium-12 { width: 100%; }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1199px) {
 	.row > .columns.large-1,
 	.row > .columns.large-2,
 	.row > .columns.large-3,
@@ -72,7 +89,7 @@
 .row > .columns.small-11 { width: 91.6666666667%; }
 .row > .columns.small-12 { width: 100%; }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
 	.row > .columns.medium-1 { width: 8.33333333333%; }
 	.row > .columns.medium-2 { width: 16.6666666667%; }
 	.row > .columns.medium-3 { width: 25.0%; }
@@ -87,7 +104,7 @@
 	.row > .columns.medium-12 { width: 100%; }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
 	.row > .columns.large-1 { width: 8.33333333333%; }
 	.row > .columns.large-2 { width: 16.6666666667%; }
 	.row > .columns.large-3 { width: 25.0%; }
