@@ -1,5 +1,5 @@
 # Micro Responsive Grid
-A super light responsive CSS grid system for Mobile, Tablet and Desktop. No real reason for making another one other than wanting the syntax of the Foundation grid system, without all the bloat. Syntax is based on the Foundation 5 grid system. Live demo avalible at (http://foxx.io/responsive/)
+A super light responsive CSS grid system for Mobile, Tablet and Desktop. No real reason for making another one other than wanting the syntax of the Foundation grid system, without all the bloat. Syntax is based on the Foundation 5 grid system. Live demo avalible at (http://projects.foxx.io/responsive/)
 
 ## Grid Syntax
 ```html
