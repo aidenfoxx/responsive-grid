@@ -1,7 +1,7 @@
 /** 
  * Micro Responsive Grid
  * 
- * @version    0.1.1
+ * @version    0.1.2
  * @author     Aiden Foxx
  * @license    MIT License 
  * @copyright  2015 Aiden Foxx
@@ -24,7 +24,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.row > .columns > .row { margin: 0 -15px; }
+.row > .columns .row { margin: 0 -15px; }
 
 /**
  * Visibility works on level-and-lower basis e.g. 
